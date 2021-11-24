@@ -5,8 +5,8 @@
 
 <VBox alignment="CENTER" prefHeight="200" prefWidth="300" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label fx:id="welcomeText" text="Szöveg" />
-      <Button mnemonicParsing="false" onAction="#helloClick" text="Hello" />
-      <TextField />
+      <Label fx:id="welcomeText" />
+      <Button mnemonicParsing="false" onAction="#helloClick" text="Kiír" />
+      <TextField fx:id="textField" promptText="Add meg a neved!" />
    </children>
 </VBox>
