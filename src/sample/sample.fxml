@@ -5,8 +5,17 @@
 
 <VBox alignment="CENTER" prefHeight="200" prefWidth="300" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Label fx:id="welcomeText" />
-      <Button mnemonicParsing="false" onAction="#helloClick" text="Kiír" />
       <TextField fx:id="textField" promptText="Add meg a neved!" />
+      <HBox>
+         <children>
+            <Spinner fx:id="eletkor" editable="true">
+               <valueFactory>
+                  <SpinnerValueFactory.IntegerSpinnerValueFactory min="10" max="120" amountToStepBy="1" />
+               </valueFactory>
+            </Spinner>
+            <Label fx:id="eletkorLabel" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#felvetelClick" text="Felvétel" />
    </children>
 </VBox>
