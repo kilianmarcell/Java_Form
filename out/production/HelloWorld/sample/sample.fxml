@@ -10,12 +10,12 @@
          <children>
             <Spinner fx:id="eletkor" editable="true">
                <valueFactory>
-                  <SpinnerValueFactory.IntegerSpinnerValueFactory min="10" max="120" amountToStepBy="1" />
+                  <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" max="120" min="10" />
                </valueFactory>
             </Spinner>
-            <Label fx:id="eletkorLabel" />
          </children>
       </HBox>
       <Button mnemonicParsing="false" onAction="#felvetelClick" text="Felvétel" />
+      <ListView fx:id="lista" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </VBox>

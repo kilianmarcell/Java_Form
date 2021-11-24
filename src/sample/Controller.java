@@ -9,12 +9,9 @@ public class Controller {
     public TextField textField;
     public Label eletkorLabel;
     public Spinner<Integer> eletkor;
+    public ListView lista;
 
     public void felvetelClick(ActionEvent actionEvent) {
-        Alert alert = new Alert(Alert.AlertType.NONE);
-        alert.setContentText("Szia " + textField.getText());
-        alert.getButtonTypes().add(ButtonType.OK);
-        alert.showAndWait();
-        welcomeText.setText("Szia "+ textField.getText());
-}
+        lista.getItems().add(textField.getText() + " : " + eletkor.getValue());
     }
+}
